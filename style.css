@@ -127,6 +127,10 @@ button:focus {
   display: none;
 }
 
+.modal-container.show-modal {
+  display: block;
+}
+
 .modal {
   background-color: #fff;
   border-radius: 5px;
@@ -138,6 +142,17 @@ button:focus {
   overflow: hidden;
   width: 400px;
   max-width: 100%;
+  animation: modalOpen 1s ease;
+}
+
+@keyframes modalOpen {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .modal-header {
